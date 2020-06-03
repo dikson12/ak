@@ -1,0 +1,29 @@
+<head>
+    
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>Vremenska Prognoza</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script src="Weather.js"></script>
+      </head>
+      
+      <body>
+        <iframe id="weather" src="https://www.weather2umbrella.com/vremenska-prognoza-beograd-srbija-sr/trenutno" width="1000" height="600" frameborder="0" scrolling="yes"></iframe>
+      
+        <form method="post">
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-beograd-srbija-sr/trenutno')" />Beograd
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-novi-sad-serbia-sr/trenutno')" />Novi Sad
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-ni%C5%A1-srbija-sr/trenutno')" />Nis
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-kragujevac-serbia-sr/trenutno')" />Kragujevac
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-kraljevo-serbia-sr/trenutno')" />Kraljevo
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-%C4%8Da%C4%8Dak-srbija-sr/trenutno')" />Cacak
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-sremska-mitrovica-serbia-sr/trenutno')" />Sremska Mitrovica
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-subotica-serbia-sr/trenutno')" />Subotica
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-valjevo-serbia-sr/trenutno')" />Valjevo
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-kladovo-serbia-sr/trenutno')" />Kladovo
+          <input name="Selection" type="radio" onclick="go('https://www.weather2umbrella.com/vremenska-prognoza-u%C5%BEice-srbija-sr/trenutno')" />Uzice
+        </form>
+        <a href="Uputstvo.html" target="_blank">Uputstvo</a><br>
+        <a href="O autoru.html" target="_blank">O autoru</a><br>
+      </body>
+      
+      </html>

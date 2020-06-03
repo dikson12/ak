@@ -1,0 +1,13 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<ul>
+			<li><a href="Pocetna.html">Pocetna</a></li>
+			<li><a href="O autoru.html">O autoru</a></li>
+			<li><a href="Uputstvo.html">Uputstvo</a></li>
+		</ul>
+		<p>Klikom na malu sliku, ta slika menja mesto sa vecom slikom. Takodje, menja se i naslov slike</p>
+
+	</body>
+</html>

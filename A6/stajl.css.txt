@@ -1,0 +1,51 @@
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button1:hover {
+        background-color: #4CAF50;
+        color: white;
+}
+#korisnici {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #korisnici td, #korisnici th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #korisnici tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #korisnici tr:hover {
+        background-color: #ddd;
+    }
+
+    #korisnici th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+.tdd{
+    text-align:center;
+}

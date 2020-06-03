@@ -1,0 +1,9 @@
+body {
+    background-color:ivory;
+    font-family:Arial;
+}
+.button {
+    background-color:cornflowerblue;
+    padding: 5px;
+    text-align: center;
+}

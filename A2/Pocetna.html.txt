@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stil.css">
+	</head>
+	<body>
+		<ul>
+			<li><a href="Pocetna.html">Pocetna</a></li>
+			<li><a href="O autoru.html">O autoru</a></li>
+			<li><a href="Uputstvo.html">Uputstvo</a></li>
+		</ul>
+		<div class="kontejnergalerije">
+			<p align="center" id="tekst">Vrata</p>
+			<img src="slike/slika1.jpg" onclick="promeni(this.id)" id="img1" alt="Vrata"class="centralna">
+			<div align="center" class="cntr prelazmisa">
+				<img src="slike/slika2.jpg" onclick="promeni(this.id)" id="img2" alt="Prozor" class="ostale">
+				<img src="slike/slika3.jpg" onclick="promeni(this.id)" id="img3" alt="Krov" class="ostale">
+				<img src="slike/slika4.jpg" onclick="promeni(this.id)" id="img4" alt="Ucionica" class="ostale">
+				<img src="slike/slika5.jpg" onclick="promeni(this.id)" id="img5" alt="Ranac" class="ostale">
+				<img src="slike/slika6.jpg" onclick="promeni(this.id)"id="img6" alt="Patika" class="ostale">
+				<img src="slike/slika7.jpg" onclick="promeni(this.id)" id="img7" alt="Medved" class="ostale">
+				<img src="slike/slika8.jpg" onclick="promeni(this.id)" id="img8" alt="Sator" class="ostale">
+				<img src="slike/slika9.jpg" onclick="promeni(this.id)" id="img9" alt="Unimer" class="ostale">
+				<img src="slike/slika10.jpg" onclick="promeni(this.id)" id="img10" alt="Srafciger" class="ostale">
+			<div>
+
+		</div>
+		<script src="javascript.js">
+		</script>
+	</body>
+</html>

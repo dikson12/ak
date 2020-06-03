@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<biblioteka>
+  <knjiga ISBN="10-000000-001"
+          naslov="Baze podataka"
+          stanje="12"
+          citano="21"></knjiga>
+
+  <knjiga ISBN="10-000000-002"
+          naslov="Programiranje C#"
+          stanje="24"
+          citano="15"></knjiga>
+  
+<knjiga ISBN="11-00000-003"
+          naslov="Web programiranje"
+  stanje="5"
+  citano="28"
+  ></knjiga>
+
+<knjiga ISBN="11-00000-004"
+          naslov="Uvod u programski jezik C"
+  stanje="25"
+  citano="15"
+  ></knjiga>
+  
+<knjiga ISBN="11-00000-005"
+          naslov="Vestacka inteligencija"
+  stanje="12"
+  citano="10"
+  ></knjiga>
+</biblioteka>

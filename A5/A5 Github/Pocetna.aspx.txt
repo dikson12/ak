@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <title>Rezervacija</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 186px;
+        }
+        .auto-style2 {
+            width: 164px;
+        }
+        .auto-style4 {
+            width: 194px;
+        }
+        .auto-style5 {
+            width: 1233px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+        </div>
+        <br /> <br />
+       
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label1" runat="server" Text="Broj sedišta:"></asp:Label>
+                </td>
+                <td class="auto-style1">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label2" runat="server" Text="Ime:"></asp:Label>
+                </td>
+                <td class="auto-style1">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label3" runat="server" Text="Prezime:"></asp:Label>
+                </td>
+                <td class="auto-style1">
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Potvrdi"  class="button"/>
+                </td>
+            </tr>
+        </table>
+       <br /> <br />
+    <table style="width:100%;">
+        <tr>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style4">
+                <asp:Button ID="Button2" runat="server" Text="Uputstvo" class="button" OnClick="Button2_Click" />
+            </td>
+            <td>
+                <asp:Button ID="Button3" runat="server" Text="O autoru"  class="button" OnClick="Button3_Click"/>
+            </td>
+        </tr>
+       
+    </table>
+       
+    </form>
+    </body>
+</html>

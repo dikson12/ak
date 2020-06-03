@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Configuration;
+using System.Data.SqlClient;
+using System.Data;
+using System.Xml;
+
+...
+...
+...
+
+public partial class Pregled : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            ds.ReadXml(MapPath(@"~/biblioteka.xml"));
+            DataView pregled = new DataView();
+            pregled = ds.Tables[0].DefaultView;
+            pregled.Sort = "citano ASC";
+            GridView1.DataSource = pregled;
+            GridView1.DataBind();
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pocetna.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/O_autoru.aspx");
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+        }
+    }

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+<form id="form1" runat="server">
+        <h1>Uputstvo</h1>
+        Pretraga je organizovana tako da svi kriterijumi moraju biti navedeni i ispunjeni.<br />
+        <br />
+        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Katalog albuma</asp:LinkButton>
+    </form>
+</body>
+</html>
+

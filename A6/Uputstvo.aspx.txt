@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="stajl.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Label">Uputstvo</asp:Label>
+            <br />
+
+            <asp:Label ID="Label2" runat="server" Text="Label">Ukucajte u text box-ove bilo kakav tekst i u realnom<br />vremenu ce vam iskociti tabela u koliko postoji korisnik kojeg ste pokusali da pronadjete<br />
+                na drop down listi mozete izabrati grad i kada izaberete prikazace vam se u tabeli<br />svi korisnici koji zive u tom gradu
+                <br />
+                dugmici zluze za prelaz na druge stranice
+            </asp:Label>
+            <br />
+            <br />
+            <table id="korisnici" style="width:500px">
+                <tr>
+                    <td class="tdd">
+                        <asp:Button CssClass="button button1" ID="Button1" runat="server" Text="Vazni telefoni" OnClick="Button1_Click" Height="35px" Width="165px" /><br />
+                    </td>
+                    <td class="tdd">
+                        <asp:Button CssClass="button button1" ID="Button2" runat="server" Text="Pocetna" OnClick="Button2_Click" Width="150px" Height="35px" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

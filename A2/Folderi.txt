@@ -1,0 +1,16 @@
+slike(folder)
+	slika1
+	slika2
+	slika3
+	slika4
+	slika5
+	slika6
+	slika7
+	slika8
+	slika9
+	slika10
+javascript.js
+O autoru.html
+Pocetna.html
+stil.css
+Uputstvo.html

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="stajl.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Label">Vazni telefoni</asp:Label>
+        </div>
+        <br />
+        <table style="width:500px">
+            <tr>
+                <td class="auto-style1">Policija</td>
+                <td>192</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Hitna pomoc</td>
+                <td>194</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Vatrogasna sluzba</td>
+                <td>193</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Tacno vreme</td>
+                <td>195</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Pomoc na putu</td>
+                <td>1987</td>
+            </tr>
+        </table>
+        <br />
+        <table id="korisnici" style="width:500px">
+                <tr>
+                    <td class="tdd">
+                        <asp:Button CssClass="button button1" ID="Button1" runat="server" Text="Pocetna" OnClick="Button1_Click" Height="35px" Width="165px" /><br />
+                    </td>
+                    <td class="tdd">
+                        <asp:Button CssClass="button button1" ID="Button2" runat="server" Text="Uputstvo" OnClick="Button2_Click" Width="150px" Height="35px" />
+                    </td>
+                </tr>
+            </table>
+    </form>
+</body>
+</html>

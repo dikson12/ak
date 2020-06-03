@@ -1,0 +1,2 @@
+Zadaci A2, A3 i A11 se rade preko notepad++ etc.
+Ostali zadaci se rade preko Visual-a.

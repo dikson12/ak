@@ -1,0 +1,11 @@
+	<form>
+            <td> Ime osobe 1: &nbsp; <input type="text" id="ime1">&nbsp;
+            <td> Ime osobe 2: &nbsp; <input type="text" id="ime2"><br><br>
+            <br><hr><br>
+            <td>Dat rodj osobe 1: &nbsp; <input type="date" id="datum1">&nbsp;
+            <td>Dat rodj osobe 2: &nbsp; <input type="date" id="datum2"><br><br>
+            <br><br>
+        </form>
+	<div id="nzm">
+		<input type="button" id="dugme" value="Funkcija" onclick="Funkcija()" />
+	</div>

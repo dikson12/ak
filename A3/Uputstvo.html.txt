@@ -1,0 +1,5 @@
+<html>
+		<a href="Vremenska Prognoza.html" target="_blank">Uputstvo</a><br>
+        <a href="O autoru.html" target="_blank">O autoru</a><br>
+		<p>Pritiskom na radio button se menja sadrzaj iframe-a</p>
+</html>

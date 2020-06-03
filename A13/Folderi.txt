@@ -1,0 +1,9 @@
+(Folder) Slike
+	sl1.png
+	sl2.jpg
+	sl3.jpg
+(Folder) Podaci
+	katalog.txt
+Album.cs
+Katalog.aspx
+Uputstvo.aspx

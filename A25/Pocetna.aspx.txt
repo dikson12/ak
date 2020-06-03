@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pocetna</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 120px;
+        }
+        .auto-style2 {
+            width: 166px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style1">
+    
+        <asp:Label ID="Label1" runat="server" Text="Korisnicko ime:"></asp:Label>
+                </td>
+                <td class="auto-style2">
+        <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 20px"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+        <asp:Label ID="Label2" runat="server" Text="Sifra:"></asp:Label>
+                </td>
+                <td class="auto-style2">
+        <asp:TextBox ID="TextBox2" runat="server" style="margin-left: 21px" Width="115px"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Pregled knjiga" Width="118px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+        <asp:Button ID="Button1" runat="server" Text="LOG IN" Width="67px" OnClick="Button1_Click" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="auto-style2">
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="JOIN" Width="78px" />
+    
+                </td>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Zaboravljena lozinka?</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+&nbsp;<br />
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>O autoru</title>
+      <link rel="stylesheet" type="text/css" href="StyleSheet1.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h2>O autoru</h2>
+        <div>
+            Ime: Baros Nikolina 4-8<br />
+            Profesor: Ivana Stajic<br />
+            Skola: ETS "Nikola Tesla", Beograd<br />
+            <br />
+        </div>
+        <asp:Button ID="Button1" class="button" runat="server" Height="36px" OnClick="Button1_Click" Text="Pocetna" Width="69px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button2" runat="server" class="button" Height="33px" OnClick="Button2_Click" Text="Grafika" Width="67px" />
+    </form>
+</body>
+</html>

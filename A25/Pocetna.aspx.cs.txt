@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Configuration;
+using System.Data.SqlClient;
+
+...
+...
+...
+
+ public partial class Pocetna : System.Web.UI.Page
+    {
+        string cs = WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+
+            Response.Redirect("~/Registracija.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(cs);
+            string upit = "Select Count(*) From KorisnikTbl Where email=@email and sifra=@sifra";
+            SqlCommand cmd = new SqlCommand(upit, con);
+
+            cmd.Parameters.AddWithValue("@email", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@sifra", TextBox2.Text);
+
+            try
+            {
+                con.Open();
+                if (Convert.ToInt32(cmd.ExecuteScalar()) == 1)
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Dobrodošli na sajt!')", true);
+
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Registracija nije uspela!')", true);
+
+                }
+            }
+            catch
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Nije uspelo!')", true);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ZabLozinka.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("~/Pregled.aspx");
+        }
+    }

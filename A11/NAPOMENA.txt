@@ -1,0 +1,1 @@
+Zbog toga sto se u ovom zadatku trazi da se skine template sa interneta, ne mogu da napisem ceo kod. Napisacu samo deo za formu i javascript funkciju za izracunavanje ovoga sto se trazi.

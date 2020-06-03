@@ -1,0 +1,68 @@
+<script>
+    function Funkcija(){
+    var datum1 = document.getElementById("datum1");
+    var datum2 = document.getElementById("datum2");
+
+    var datum3 = datum1.value.split('-');
+    var h1godina = parseInt(datum3[0] / 1000);
+    var s1godina = parseInt((datum3[0] / 100) % 10);
+    var m1godina = parseInt((datum3[0] / 10) % 10);
+    var j1godina = parseInt(datum3[0] % 10);
+
+    var d1mesec = parseInt(datum3[1] / 10);
+    var j1mesec = parseInt(datum3[1] % 10);
+
+    var d1dan = parseInt(datum3[2] / 10);
+    var j1dan = parseInt(datum3[2] % 10);
+
+    var zbir1 = h1godina + s1godina + m1godina + j1godina + d1mesec + j1mesec + d1dan + j1dan;
+    var zbir1pom;
+    if(zbir1 >= 10){
+        var d1pom = Math.floor(zbir1 / 10);
+        var j1pom = zbir1 % 10;
+        zbir1pom = d1pom + j1pom;
+    }
+    else{
+        zbir1pom = zbir1;
+    }
+
+
+    var datum4 = datum2.value.split('-');
+    var h2godina = parseInt(datum4[0] / 1000);
+    var s2godina = parseInt((datum4[0] / 100) % 10);
+    var d2godina = parseInt((datum4[0] / 10) % 10);
+    var j2godina = parseInt(datum4[0] % 10);
+
+    var d2mesec = parseInt(datum4[1] / 10);
+    var j2mesec = parseInt(datum4[1] % 10);
+
+    var d2dan = parseInt(datum4[2] / 10);
+    var j2dan = parseInt(datum4[2] % 10);
+
+    var zbir2 = h2godina + s2godina + d2godina + j2godina + d2mesec + j2mesec + d2dan + j2dan;
+
+    var zbir2pom;
+    if(zbir2 >= 10){
+        var d2pom = Math.floor(zbir2 / 10);
+        var j2pom = zbir2 % 10;
+        zbir2pom = d2pom + j2pom;
+    }
+    else{
+        zbir2pom = zbir2;
+    }
+
+
+
+    var zoki;
+    if(zbir1pom > zbir2pom){
+        zoki = parseInt((zbir2pom / zbir1pom) * 100);
+    }
+    else if(zbir2pom > zbir1pom){
+        zoki = parseInt((zbir1pom / zbir2pom) * 100);
+    }
+	else if(zbir1pom == zbir2pom){
+		zoki = 100;
+		}
+		alert(zoki + "%");
+	}
+	</script>

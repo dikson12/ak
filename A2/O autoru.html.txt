@@ -1,0 +1,18 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<ul>
+			<li><a href="Pocetna.html">Pocetna</a></li>
+			<li><a href="O autoru.html">O autoru</a></li>
+			<li><a href="Uputstvo.html">Uputstvo</a></li>
+		</ul>
+		<ul>
+			<li>Ime: Aleksa</li>
+			<li>Prezime: Savic</li>
+			<li>Skola: ETS "Nikola Tesla"</li>
+			<li>Odeljenje: IV 8</li>
+			<li>Smer: Informacione tehnologije</li>
+		</ul>
+	</body>
+</html>

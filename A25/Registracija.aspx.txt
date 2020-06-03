@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Registracija</title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+        .auto-style2 {
+            width: 122px;
+        }
+        .auto-style3 {
+            height: 23px;
+            width: 122px;
+        }
+        .auto-style4 {
+            width: 142px;
+        }
+        .auto-style5 {
+            height: 23px;
+            width: 142px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Registracija"></asp:Label>
+                </td>
+                <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Ime:</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Prezime:</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">E-mail:</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Lozinka:</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox4" runat="server" TextMode="Password"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Ponovi lozinku:</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox5" runat="server" TextMode="Password"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Kontrolno pitanje:</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="17px" Width="127px" DataSourceID="SqlDataSource1" DataTextField="Pitanje" DataValueField="Pitanje" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Pitanje] FROM [PitanjaTbl]"></asp:SqlDataSource>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+             <tr>
+                <td class="auto-style2">
+        <asp:Button ID="Button1" runat="server" Text="Registruj se!" OnClick="Button1_Click" />
+                 </td>
+                <td class="auto-style4">
+                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Pocetna" Width="117px" />
+                 </td>
+                <td>
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="O autoru" Width="127px" />
+                 </td>
+            </tr>
+        </table>
+    
+    </div>
+    </form>
+</body>
+</html>

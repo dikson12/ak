@@ -1,0 +1,92 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Configuration;
+using System.Data.SqlClient;
+
+...
+...
+...
+
+ public partial class ZabLozinka : System.Web.UI.Page
+    {
+        string cs = WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+    
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(cs);
+            if (TextBox1.Text == "" && TextBox2.Text == "" && TextBox3.Text == "" && TextBox4.Text == "")
+            {
+
+            }
+            else
+            {
+                if (TextBox3.Text == TextBox4.Text)
+                {
+                    try
+                    {
+                        string upit = "Select Count(*) From KorisnikTbl Where (email=@email AND Pitanje=@Pitanje AND Odgovor=@Odgovor)";
+                        string update = "Update KorisnikTbl Set sifra=@sifra Where email=@email";
+
+                        SqlCommand cmd = new SqlCommand(upit, con);
+                        SqlCommand azr = new SqlCommand(update, con);
+
+                        cmd.Parameters.AddWithValue("@email", TextBox1.Text);
+
+                        cmd.Parameters.AddWithValue("@Pitanje", DropDownList1.SelectedValue.ToString());
+                        cmd.Parameters.AddWithValue("@Odgovor", TextBox2.Text);
+
+                        azr.Parameters.AddWithValue("@sifra", TextBox4.Text);
+                        azr.Parameters.AddWithValue("@email", TextBox1.Text);
+                        con.Open();
+                        if (Convert.ToInt32(cmd.ExecuteScalar()) > 0)
+                        {
+
+                            if (Convert.ToInt32(azr.ExecuteNonQuery()) == 1)
+                            {
+                                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Uspesno ste promenili lozinku!')", true);
+                            }
+
+                        }
+
+                        else
+                        {
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Niste se uspesno ulogovali!')", true);
+                        }
+                    }
+                    catch
+                    {
+                        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Niste se uspesno ulogovali!')", true);
+                    }
+                    finally
+                    {
+                        con.Close();
+                    }
+                }
+
+            }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pocetna.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/O_autoru.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pregled.aspx");
+        }
+    }
